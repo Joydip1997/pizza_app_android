@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="8dp"
+        android:layout_width="180dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="15dp"
+        android:elevation="15dp"
+        app:cardBackgroundColor="#fafbfd">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/pizza_item_imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginRight="80dp"
+                android:src="@drawable/pizza"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/pizza_item_nameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="Pizza Name"
+                android:textColor="@color/colorPrimaryTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pizza_item_imageView" />
+
+            <TextView
+                android:id="@+id/pizza_item_typeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="3dp"
+                android:text="Veg Or NonVeg"
+                android:textColor="@color/colorPrimaryTextColor"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pizza_item_nameView" />
+
+
+            <TextView
+                android:id="@+id/pizza_item_priceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:text="$1.77"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryTextColor"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/pizza_item_nameView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
